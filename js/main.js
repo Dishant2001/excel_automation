@@ -965,10 +965,10 @@ attachEventListeners();
         
 
 //Information display
-function showProduct(productId) {
-    const product = products["allmatic"][productId];
+function showProduct(tag,productId) {
+    const product = products[tag][productId];
+    console.log(tag,productId);
     if (!product){
-        console.log(productId);
         return;
     }
 
@@ -997,6 +997,16 @@ function showProduct(productId) {
 function closeProduct() {
     document.getElementById("productDisplay").classList.remove("active");
 }
+
+// document.addEventListener("click", function (event) {
+//     let productDisplay = document.getElementById("productDisplay");
+    
+//     // Check if productDisplay is active and if the click is outside it
+//     if (productDisplay.classList.contains("active") && !productDisplay.contains(event.target)) {
+//         closeProduct();
+//     }
+// });
+
 
 document.addEventListener("DOMContentLoaded", attachEventListeners);
 

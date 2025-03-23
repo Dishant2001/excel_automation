@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
     --primary: #AB7442;
     --light: #F5F5F5;
@@ -85,6 +86,7 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    z-index:1000;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -119,7 +121,7 @@
 
 /*** logo ***/
 .logo-img {
-    height: 10vh; /* Scales based on viewport height */
+    height: 2em; /* Scales based on viewport height */
     width: auto; /* Maintains aspect ratio */
     max-width: 150px; /* Prevents excessive width on large screens */
     filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
@@ -442,7 +444,7 @@
     right: -100%;
     top: 0;
     width: 40vw;
-    height: 90vh;
+    height: 100vh;
     background: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     padding: 2rem;
@@ -450,13 +452,13 @@
     transition: right 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    z-index:100;
+    z-index:9999;
     
 }
 .product-container.active {
     right: 0;
 }
-.product-title { text-align: center; }
+.product-title { text-align: center; font-size:1.5em; }
 .product-images img { width: 100%; max-width: 10rem; margin: 0.5rem; }
 .product-table, .product-table th, .product-table td {
     border: 1px solid black;
@@ -465,12 +467,29 @@
     text-align: left;
     width: 100%;
 }
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 1vw; 
+    margin-bottom:0.5em;
+}
+
+.product-logo {
+    position:relative;
+    top:0;
+    left:0;
+    width: 20%; /* Scales with container width */
+    max-width: 5rem; /* Prevents it from getting too large */
+    height: auto; /* Maintains aspect ratio */
+    filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
+}
+
 .close-btn {
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .icon {
     cursor: pointer;
@@ -482,6 +501,13 @@
 @media (max-width: 768px) {
     .product-container {
         width: 80vw;
+    }
+    .product-title{
+        font-size:1em;
+    }
+    .product-logo{
+        width:15%;
+        max-width:3rem;
     }
 }
 

@@ -33,6 +33,17 @@
 </head>
 
 <body>
+
+    <div id="productDisplay" class="product-container">
+        <span class="close-btn" onclick="closeProduct()">&times;</span>
+        <h1 class="product-title" id="productTitle"></h1>
+        <ul class="product-description" id="productDescription"></ul>
+        <div class="product-images" id="productImages"></div>
+        <table class="product-table" id="productTable"></table>
+        <div class="product-images" id="dimensionImages"></div>
+        <table class="product-table" id="accessoriesTable"></table>
+    </div>
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -63,7 +74,7 @@
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-info-circleedin-in"></i></a>
                     <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -110,9 +121,10 @@
             <h1 class="display-3 text-white mb-3 animated slideInDown">Our Products</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Products</li>
+                    <li class="breadcrumb-item"><a class="text-white" href="project.html">Products</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Allmatic</li>
                 </ol>
             </nav>
         </div>
@@ -124,61 +136,122 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Our Products</h1>
+                <h1 class="display-5 mb-5">AllMATIC</h1>
             </div>
             <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-12 text-center">
                     <ul class="list-inline mb-5" id="portfolio-flters">
                         <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">JIELONG</li>
-                        <li class="mx-2" data-filter=".second">ALLMATIC</li>
-                        <li class="mx-2" data-filter=".third">ITALIAN</li>
-                        <li class="mx-2" data-filter=".fourth">SL CHINA</li>
+                        <li class="mx-2" data-filter=".first">SLIDING</li>
+                        <li class="mx-2" data-filter=".second">SWING</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/jl_rolling/JIELONG ROLLING SHUTTER MOTOR/1000kg (1ph and 3ph).jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/jl_rolling/JIELONG ROLLING SHUTTER MOTOR/1000kg (1ph and 3ph).jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/jl_sliding/JIELONG SLIDING GATE MOTOR/BG 1000KG.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/jl_sliding/JIELONG SLIDING GATE MOTOR/BG 1000KG.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/BIG 2.2.jpeg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/BIG 2.2.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="allmatic_products.html"><i class="fa fa-link"></i></a>
+                                <a id="kalos_xl_power" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/MOVEO 600KG.png" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/MOVEO 600KG.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="moveo" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/KALOS XL 800KG.webp" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/KALOS XL 800KG.webp" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="kalos_xl" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/TRAKTOR MONOPHASE AND THREEPHASE.webp" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/TRAKTOR MONOPHASE AND THREEPHASE.webp" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="traktor" class="btn  btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/I2500.png" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/I2500.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="i2500" class="btn  btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/IND 4000KG (VI).png" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_slide/ALLMATIC SLIDING GATE MOTOR/IND 4000KG (VI).png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="ind4000" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/INT R-XL.png" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/INT R-XL.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="intrxl" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
                             <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
                         </div>
                     </div>
@@ -186,10 +259,10 @@
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/INT R-XL.png" alt="">
+                            <img class="img-fluid w-100" src="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/KINEO 400.jpeg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/INT R-XL.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="allmatic_products.html"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/KINEO 400.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="kineo" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -198,28 +271,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/italian_central/ITALIAN CENTRAL MOTORS/UNIKO 1M.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/PLUS L.png" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/italian_central/ITALIAN CENTRAL MOTORS/UNIKO 1M.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/PLUS L.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="plus" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
+                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
                             <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/italian_highspeed/ITALIAN HIGH SPEED DOOR MOTOR/SPEEDY VSF 10.webp" alt="">
+                            <img class="img-fluid w-100" src="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/XTILUS 24VDC.png" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/italian_highspeed/ITALIAN HIGH SPEED DOOR MOTOR/SPEEDY VSF 10.webp" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/XTILUS 24VDC.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="xtilus" class="btn btn-info btn-square btn-outline-light mx-1" onclick="showProduct(this.id)"><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
+                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/MAXIART K.jpeg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/allmatic_swing/ALLMATIC SWING GATE MOTOR/MAXIART K.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a id="maxiart" class="btn btn-info btn-square btn-outline-light mx-1"><i class="fa fa-info-circle"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -229,36 +317,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item fourth wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/sl_china/SL CHINA SLIDING GATE MOTOR/OB 2500 KG FRONT.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/sl_china/SL CHINA SLIDING GATE MOTOR/OB 2500 KG FRONT.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item fourth wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/products/sl_swing/SL SWING GATE  MOTOR/JA 300 DC.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/products/sl_swing/SL SWING GATE  MOTOR/JA 300 DC.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -307,7 +366,7 @@
                     <div class="d-flex pt-1">
                         <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-info-circleedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -373,7 +432,7 @@
                                             <i class="fa fa-eye"></i>
                                         </a>
                                         <a class="btn btn-square btn-outline-light mx-1" href="${item.link}">
-                                            <i class="fa fa-link"></i>
+                                            <i class="fa fa-info-circle"></i>
                                         </a>
                                     </div>
                                 </div>

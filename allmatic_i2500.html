@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            padding: 5%;
+        }
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: auto;
+        }
+        .product-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+        .product-description {
+            font-size: 1rem;
+            color: #555;
+            text-align: justify;
+        }
+        .product-images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product-images img {
+            height: auto;
+            max-height: 200px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .product-table th, .product-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .product-table th {
+            background: #f0f0f0;
+        }
+        @media (max-width: 768px) {
+            .product-container {
+                padding: 1.5rem;
+            }
+            .product-title {
+                font-size: 1.8rem;
+            }
+            .product-description {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <h1 class="product-title">Allmatic I2500</h1>
+        <ul class="product-description">
+            <li>Ventilated motor with oil bath, built for intensive and industrial heavy gates</li>
+            <li>With self-ventilation system, I2500 has metal mechanical components and an innovative cooling system that allows the use in critical locations, always keeping a smooth and precise movement in every condition.</li>
+            <li>Revolutionary integrated limit switch system with high precision adjustment.</li>
+            <li>Using this design is the best for a maximum capacity of 2500kg</li>
+        </ul>
+
+        <div class="product-images">
+            <img src="img/I2500.png" alt="Product Image 1">
+            <img src="img/I2500_gear.png" alt="Product Image 2">
+            <img src="img/I2500_switch.png" alt="Product Image 3">
+        </div>
+
+        <table class="product-table">
+            <tr>
+                <th>TECHNICAL FEATURES</th>
+                <th>UNIT</th>
+                <th>I2500</th>
+            </tr>
+            <tr>
+                <td>Power Supply</td>
+                <td>-</td>
+                <td>230Vac 50Hz</td>
+            </tr>
+            <tr>
+                <td>Motor Absorption</td>
+                <td>A</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Maximum Gate Weight</td>
+                <td>Kg</td>
+                <td>2500 Kg</td>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>m/min</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Maximum Thrust</td>
+                <td>N</td>
+                <td>1300</td>
+            </tr>
+            <tr>
+                <td>Service</td>
+                <td>%</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Recommended Daily Cycles</td>
+                <td>n</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Max Continuous Duration</td>
+                <td>min</td>
+                <td>8'</td>
+            </tr>
+            <tr>
+                <td>Protection Class</td>
+                <td>IP</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>Guaranteed Consecutive Cycles</td>
+                <td>n°</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Control Unit</td>
+                <td>-</td>
+                <td>CT INVERTER</td>
+            </tr>
+        </table>
+        
+        <h1 class="product-title">Additional Accessories</h1>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>ADDITIONAL ACCESSORIES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pair of Photocell FT ALL7</td>
+                </tr>
+                <tr>
+                    <td>Flashing Light With Support and Antenna</td>
+                </tr>
+                <tr>
+                    <td>Remote</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="product-images">
+            <img src="img/I2500_dimensions.png" alt="Product Image 1">
+        </div>
+
+    </div>
+</body>
+
+
+
+
+
+</html>

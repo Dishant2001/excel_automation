@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
     --primary: #AB7442;
     --light: #F5F5F5;
@@ -85,6 +86,7 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    z-index:1000;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -101,6 +103,47 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
 }
+
+
+.owl-carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa; /* Light background to fill extra space */
+    height: 50vh; /* Adjust height dynamically based on viewport */
+}
+
+.owl-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the full image is visible without cropping */
+}
+
+/*** logo ***/
+.logo-img {
+    height: 2em; /* Scales based on viewport height */
+    width: auto; /* Maintains aspect ratio */
+    max-width: 150px; /* Prevents excessive width on large screens */
+    filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
+    border: none;
+}
+
+@media (max-width: 770px) {
+    .owl-carousel-item {
+        height: auto; /* Let height adjust dynamically */
+        min-height: 40vh; /* Ensure it doesn’t become too small */
+    }
+
+    .owl-carousel-item img {
+        width: auto; /* Prevents forced stretching */
+        max-width: 100%; /* Ensures it fits within the container */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 40vh; /* Restrict excessive height */
+    }
+}
+
+
+
 
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
@@ -395,6 +438,141 @@
 .portfolio-item:hover .portfolio-overlay .btn {
     opacity: 1;
 }
+
+/* info display div */
+.product-container {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 40vw;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index:9999;
+    
+}
+.product-container.active {
+    right: 0;
+}
+.product-title { text-align: center; font-size:1.5em; }
+.product-images img { width: 100%; max-width: 10rem; margin: 0.5rem; }
+.product-table, .product-table th, .product-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    text-align: left;
+    width: 100%;
+}
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 1vw; 
+    margin-bottom:0.5em;
+}
+
+.product-logo {
+    position:relative;
+    top:0;
+    left:0;
+    width: 20%; /* Scales with container width */
+    max-width: 5rem; /* Prevents it from getting too large */
+    height: auto; /* Maintains aspect ratio */
+    filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.icon {
+    cursor: pointer;
+    padding: 1rem;
+    background: lightgray;
+    display: inline-block;
+    margin: 0.5rem;
+}
+@media (max-width: 768px) {
+    .product-container {
+        width: 80vw;
+    }
+    .product-title{
+        font-size:1em;
+    }
+    .product-logo{
+        width:15%;
+        max-width:3rem;
+    }
+}
+
+
+
+/* Make sure the portfolio container aligns items properly */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensures items stretch to the same height */
+}
+
+/* Ensure all portfolio items are of equal height */
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure images scale properly while maintaining aspect ratio */
+.portfolio-item .position-relative {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents any image overflow */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto; /* Maintains original aspect ratio */
+    max-height: 250px; /* Prevents excessive height variation */
+    object-fit: cover;
+}
+
+/* Ensure text content expands properly */
+.portfolio-item .border {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Ensure the overlay always covers the entire portfolio item */
+.portfolio-item .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures overlay fully covers the portfolio item */
+    background: rgba(53, 53, 53, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Show overlay on hover */
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+
+
 
 
 /*** Quote ***/

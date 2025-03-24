@@ -1,3 +1,6 @@
+var panelOpen = false;
+
+
 (function ($) {
     "use strict";
 
@@ -941,13 +944,14 @@ function loadJSON() {
 
   console.log(Object.keys(products));
 
-  attachEventListeners();
+  // attachEventListeners();
 }
 
 // Function to attach event listeners dynamically
 function attachEventListeners() {
     document.querySelectorAll(".btn-info").forEach(button => {
         button.addEventListener("click", function () {
+            panelOpen = true;
             showProduct(this.id); // Pass the clicked button's ID
         });
     });
@@ -969,12 +973,14 @@ function attachEventListeners() {
         // Load JSON when the page loads
         
 
+
+
 //Information display
 function showProduct(tag,productId) {
     const subproduct = products[tag];
-    console.log(Object.keys(subproduct));
+    // console.log(Object.keys(subproduct));
     const product = subproduct[productId];
-    console.log(tag,productId);
+    // console.log(tag,productId);
     if (!product){
         console.log("No product")
         return;
@@ -1050,12 +1056,14 @@ function showProduct(tag,productId) {
   }
   
   document.getElementById("productDisplay").classList.add("active");
+  panelOpen = true;
   
   
 }
 
 function closeProduct() {
     document.getElementById("productDisplay").classList.remove("active");
+    panelOpen = false;
 }
 
 // document.addEventListener("click", function (event) {
@@ -1069,4 +1077,18 @@ function closeProduct() {
 
 
 document.addEventListener("DOMContentLoaded", loadJSON);
+
+// document.addEventListener("click", function(event) {
+//   let element = document.getElementById("productDisplay");
+
+//   console.log("Clicked on screen");
+//   console.log(event.target);
+
+//   // Only change if the clicked element is NOT #myElement
+//   if (event.target !== element && panelOpen) {
+//       console.log("Inside if");
+//       closeProduct();
+//   }
+// });
+
 

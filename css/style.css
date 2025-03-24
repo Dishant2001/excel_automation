@@ -125,6 +125,7 @@
     width: auto; /* Maintains aspect ratio */
     max-width: 150px; /* Prevents excessive width on large screens */
     filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
+    border: none;
 }
 
 @media (max-width: 770px) {

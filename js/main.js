@@ -103,14 +103,5 @@ var panelOpen = false;
 })(jQuery);
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let path = window.location.pathname;
-
-    const validRoutes = ["/index.html", "/about.html", "/products.html","/contact.html"]; // Define valid routes
-
-    if (!validRoutes.includes(path)) {
-        window.location.replace("/index.html"); // Redirect to 404 page
-    }
-});
 
 

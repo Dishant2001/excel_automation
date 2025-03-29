@@ -1,9 +1,15 @@
 /********** Template CSS **********/
 
-:root {
+/* :root {
     --primary: #AB7442;
     --light: #F5F5F5;
     --dark: #353535;
+} */
+
+:root {
+    --primary: #FF0000;  /* Dominant red from the logo */
+    --light: #FFFFFF;   /* White from the background */
+    --dark: #1D2B75;    /* Dark blue from the "X" in the logo */
 }
 
 .fw-medium {
@@ -24,6 +30,10 @@
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+.custom-icon{
+    color:var(--dark);
 }
 
 
@@ -51,6 +61,8 @@
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+    background:var(--dark);
+    border:none;
 }
 
 .btn-square {
@@ -124,14 +136,25 @@
     height: 2em; /* Scales based on viewport height */
     width: auto; /* Maintains aspect ratio */
     max-width: 150px; /* Prevents excessive width on large screens */
-    filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
+    /* filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%); */
     border: none;
+    margin:0.5em;
 }
 
-@media (max-width: 770px) {
+@media (min-width:500px){
+    .logo-long{
+        display:block;
+    }
+}
+
+@media (max-width: 500px) {
     .owl-carousel-item {
         height: auto; /* Let height adjust dynamically */
         min-height: 40vh; /* Ensure it doesn’t become too small */
+    }
+
+    .logo-long{
+        display:none;
     }
 
     .owl-carousel-item img {
@@ -301,6 +324,7 @@
     position: relative;
     display: inline-block;
     padding: 0 60px;
+    color:var(--dark);
 }
 
 .section-title.text-start h1 {
@@ -440,7 +464,7 @@
 }
 
 /* info display div */
-.product-container {
+/* .product-container {
     position: fixed;
     right: -100%;
     top: 0;
@@ -455,10 +479,10 @@
     flex-direction: column;
     z-index:9999;
     
-}
-.product-container.active {
+} */
+/* .product-container.active {
     right: 0;
-}
+} */
 .product-title { text-align: center; font-size:1.5em; }
 .product-images img { width: 100%; max-width: 10rem; margin: 0.5rem; }
 .product-table, .product-table th, .product-table td {
@@ -475,15 +499,7 @@
     margin-bottom:0.5em;
 }
 
-.product-logo {
-    position:relative;
-    top:0;
-    left:0;
-    width: 20%; /* Scales with container width */
-    max-width: 5rem; /* Prevents it from getting too large */
-    height: auto; /* Maintains aspect ratio */
-    filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(1094%) hue-rotate(341deg) brightness(91%) contrast(84%);
-}
+
 
 .close-btn {
     position: absolute;
@@ -499,7 +515,7 @@
     display: inline-block;
     margin: 0.5rem;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .product-container {
         width: 80vw;
     }
@@ -510,7 +526,7 @@
         width:15%;
         max-width:3rem;
     }
-}
+} */
 
 
 
@@ -740,7 +756,8 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+    background: var(--dark);
+    /* background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat; */
     background-size: cover;
 }
 

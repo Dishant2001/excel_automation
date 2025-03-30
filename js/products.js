@@ -63,7 +63,7 @@ function displayProducts() {
         categoryHeading.innerText = "Swing Gate Motors";
 
     const categoryProducts = details[category];
-    console.log(categoryProducts);
+    // console.log(categoryProducts);
     if (!categoryProducts) {
         productContainer.innerHTML = "<p>No products found in this category.</p>";
         return;

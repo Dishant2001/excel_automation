@@ -41,8 +41,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_225.png",
-                "img/jlecr_225_acc.png"
+                "./img/jlecr_225.png",
+                "./img/jlecr_225_acc.png"
             ]
         },
         "jlecr412": {
@@ -86,8 +86,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_412.png",
-                "img/jlecr_412_acc.png"
+                "./img/jlecr_412.png",
+                "./img/jlecr_412_acc.png"
             ]
         },
         "jlecr647": {
@@ -131,8 +131,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_647.png",
-                "img/jlecr_647_acc.png"
+                "./img/jlecr_647.png",
+                "./img/jlecr_647_acc.png"
             ]
         },
         "jlecr809": {
@@ -186,8 +186,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_809.png",
-                "img/jlecr_809_acc.png"
+                "./img/jlecr_809.png",
+                "./img/jlecr_809_acc.png"
             ]
         },
         "jlecr1401": {
@@ -231,8 +231,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_1401.png",
-                "img/jlecr_1401_acc.png"
+                "./img/jlecr_1401.png",
+                "./img/jlecr_1401_acc.png"
             ]
         },
         "jlecr1617": {
@@ -286,8 +286,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_1617.png",
-                "img/jlecr_1617_acc.png"
+                "./img/jlecr_1617.png",
+                "./img/jlecr_1617_acc.png"
             ]
         },
         "jlecr2450": {
@@ -332,8 +332,8 @@
                 ]
             },
             "images": [
-                "img/jlecr_2450.png",
-                "img/jlecr_2450_acc.png"
+                "./img/jlecr_2450.png",
+                "./img/jlecr_2450_acc.png"
             ]
         },
         "rsm2500": {
@@ -378,8 +378,8 @@
                 ]
             },
             "images": [
-                "img/rsm2500.png",
-                "img/rsm2500_bracket.png"
+                "./img/rsm2500.png",
+                "./img/rsm2500_bracket.png"
             ]
         },
         "rsm4000": {
@@ -424,8 +424,8 @@
                 ]
             },
             "images": [
-                "img/rsm4000.png",
-                "img/rsm4000_bracket.png"
+                "./img/rsm4000.png",
+                "./img/rsm4000_bracket.png"
             ]
         }
     },
@@ -445,9 +445,9 @@
                 "Magnetic limit switch available"
             ],
             "images": [
-                "img/allmatic_moveo.png",
-                "img/moveo_cu.png",
-                "img/moveo_card.png"
+                "./img/allmatic_moveo.png",
+                "./img/moveo_cu.png",
+                "./img/moveo_card.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -473,9 +473,9 @@
                 ]
             },
             "dimension_images": [
-                "img/moveo_dim1.png",
-                "img/moveo_dim2.png",
-                "img/moveo_dim3.png"
+                "./img/moveo_dim1.png",
+                "./img/moveo_dim2.png",
+                "./img/moveo_dim3.png"
             ],
             "additional_accessories": [
                 "Pair of Photocell FT ALL7",
@@ -501,8 +501,8 @@
                 "Using this design is the best for a maximum capacity of 1200kg"
             ],
             "images": [
-                "img/kalos_xl.png",
-                "img/kalos_xl_cu.png"
+                "./img/kalos_xl.png",
+                "./img/kalos_xl_cu.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -567,8 +567,8 @@
                 "Key switch"
             ],
             "dimension_images": [
-                "img/kalos_xl_dim1.png",
-                "img/kalos_xl_dim2.png"
+                "./img/kalos_xl_dim1.png",
+                "./img/kalos_xl_dim2.png"
             ]
         },
         "kalos_xl_power": {
@@ -587,9 +587,9 @@
                 "Designed for a maximum gate capacity of 1500kg"
             ],
             "images": [
-                "img/xl_power.png",
-                "img/xl_power_pinion.png",
-                "img/xl_power_bios.png"
+                "./img/xl_power.png",
+                "./img/xl_power_pinion.png",
+                "./img/xl_power_bios.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -632,8 +632,8 @@
                 "Key switch"
             ],
             "dimension_images": [
-                "img/xl_power_dim1.png",
-                "img/xl_power_dim2.png"
+                "./img/xl_power_dim1.png",
+                "./img/xl_power_dim2.png"
             ]
         },
         "traktor": {
@@ -651,9 +651,9 @@
                 "Using this design is the best for a maximum capacity of 2200kg."
             ],
             "images": [
-                "img/traktor.png",
-                "img/traktor_bios.png",
-                "img/traktor_cu.png"
+                "./img/traktor.png",
+                "./img/traktor_bios.png",
+                "./img/traktor_cu.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -699,7 +699,7 @@
                 "Remote"
             ],
             "dimension_images": [
-                "img/traktor_dim1.png"
+                "./img/traktor_dim1.png"
             ]
         },
         "i2500": {
@@ -715,9 +715,9 @@
                 "Using this design is the best for a maximum capacity of 2500kg"
             ],
             "images": [
-                "img/I2500.png",
-                "img/I2500_gear.png",
-                "img/I2500_switch.png"
+                "./img/I2500.png",
+                "./img/I2500_gear.png",
+                "./img/I2500_switch.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -760,7 +760,7 @@
                 "Remote"
             ],
             "dimension_images": [
-                "img/I2500_dimensions.png"
+                "./img/I2500_dimensions.png"
             ]
         },
         "ind4000": {
@@ -776,9 +776,9 @@
                 "Using this design is the best for a maximum capacity of 4000kg"
             ],
             "images": [
-                "img/IND4000.png",
-                "img/IND4000_motor.png",
-                "img/IND4000_dim.png"
+                "./img/IND4000.png",
+                "./img/IND4000_motor.png",
+                "./img/IND4000_dim.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -849,11 +849,11 @@
                 ]
             },
             "images": [
-                "img/ja_sl600.png"
+                "./img/ja_sl600.png"
             ],
             "dimension_images": [
-                "img/ja_sl600_dim1.png",
-                "img/ja_sl600_dim2.png"
+                "./img/ja_sl600_dim1.png",
+                "./img/ja_sl600_dim2.png"
             ]
         },
         "ja1000": {
@@ -911,11 +911,11 @@
                 ]
             },
             "images": [
-                "img/ja_sl1000.png"
+                "./img/ja_sl1000.png"
             ],
             "dimension_images": [
-                "img/ja_sl1000_dim1.png",
-                "img/ja_sl1000_dim2.png"
+                "./img/ja_sl1000_dim1.png",
+                "./img/ja_sl1000_dim2.png"
             ]
         },
         "ja3000": {
@@ -972,13 +972,13 @@
                 ]
             },
             "images": [
-                "img/ja_sl3000.png",
-                "img/ja_sl3000_cu.png"
+                "./img/ja_sl3000.png",
+                "./img/ja_sl3000_cu.png"
             ],
             "dimension_images": [
-                "img/ja_sl3000_dim1.png",
-                "img/ja_sl3000_dim2.png",
-                "img/ja_sl3000_dim3.png"
+                "./img/ja_sl3000_dim1.png",
+                "./img/ja_sl3000_dim2.png",
+                "./img/ja_sl3000_dim3.png"
             ]
         },
         "jlbg800": {
@@ -1022,11 +1022,11 @@
                 ]
             },
             "images": [
-                "img/jlbg_800.png",
-                "img/jlbg_800_cu.png"
+                "./img/jlbg_800.png",
+                "./img/jlbg_800_cu.png"
             ],
             "dimension_images": [
-                "img/jlbg_800_dim1.png"
+                "./img/jlbg_800_dim1.png"
             ]
         },
         "jlbg1000": {
@@ -1097,11 +1097,11 @@
                 ]
             },
             "images": [
-                "img/jlbg_1000.png",
-                "img/jlbg_1000_cu.png"
+                "./img/jlbg_1000.png",
+                "./img/jlbg_1000_cu.png"
             ],
             "dimension_images": [
-                "img/jlbg_1000_dim1.png"
+                "./img/jlbg_1000_dim1.png"
             ]
         },
         "jlsd3500": {
@@ -1147,13 +1147,13 @@
                 ]
             },
             "images": [
-                "img/jlsd_3500.png",
-                "img/jlsd_3500_cu.png"
+                "./img/jlsd_3500.png",
+                "./img/jlsd_3500_cu.png"
             ],
             "dimension_images": [
-                "img/jlsd_3500_dim1.png",
-                "img/jlsd_3500_dim2.png",
-                "img/jlsd_3500_dim3.png"
+                "./img/jlsd_3500_dim1.png",
+                "./img/jlsd_3500_dim2.png",
+                "./img/jlsd_3500_dim3.png"
             ]
         },
         "jlbg4500": {
@@ -1196,12 +1196,12 @@
                 ]
             },
             "images": [
-                "img/jlbg_4500.png",
-                "img/jlbg_4500_cu.png",
-                "img/jlbg_4500_motor.png"
+                "./img/jlbg_4500.png",
+                "./img/jlbg_4500_cu.png",
+                "./img/jlbg_4500_motor.png"
             ],
             "dimension_images": [
-                "img/jlbg_4500_dim1.png"
+                "./img/jlbg_4500_dim1.png"
             ]
         },
         "jlbg6500": {
@@ -1244,12 +1244,12 @@
                 ]
             },
             "images": [
-                "img/jlbg_6500.png",
-                "img/jlbg_6500_cu.png",
-                "img/jlbg_6500_gear.png"
+                "./img/jlbg_6500.png",
+                "./img/jlbg_6500_cu.png",
+                "./img/jlbg_6500_gear.png"
             ],
             "dimension_images": [
-                "img/jlbg_6500_dim1.png"
+                "./img/jlbg_6500_dim1.png"
             ]
         },
         "jlsd4500": {
@@ -1292,11 +1292,11 @@
                 ]
             },
             "images": [
-                "img/jlsd_4500.png",
-                "img/jlsd_4500_cu.png"
+                "./img/jlsd_4500.png",
+                "./img/jlsd_4500_cu.png"
             ],
             "dimension_images": [
-                "img/jlsd_4500_dim1.png"
+                "./img/jlsd_4500_dim1.png"
             ]
         },
         "jlbg3500": {
@@ -1339,11 +1339,11 @@
                 ]
             },
             "images": [
-                "img/jlbg_3500.png",
-                "img/jlbg_3500_cu.png"
+                "./img/jlbg_3500.png",
+                "./img/jlbg_3500_cu.png"
             ],
             "dimension_images": [
-                "img/jlbg_3500_dim1.png"
+                "./img/jlbg_3500_dim1.png"
             ]
         },
         "ja4.2mtr": {
@@ -1396,7 +1396,7 @@
                 ]
             },
             "images": [
-                "img/ja42mtr.png"
+                "./img/ja42mtr.png"
             ]
         },
         "ja6.2mtr": {
@@ -1449,7 +1449,7 @@
                 ]
             },
             "images": [
-                "img/ja62mtr.png"
+                "./img/ja62mtr.png"
             ]
         },
         "eterna90": {
@@ -1506,10 +1506,10 @@
                 ]
             },
             "images": [
-                "img/eterna90.png"
+                "./img/eterna90.png"
             ],
             "dimension_images": [
-                "img/eterna90_dim1.png"
+                "./img/eterna90_dim1.png"
             ]
         },
         "eterna150": {
@@ -1566,10 +1566,10 @@
                 ]
             },
             "images": [
-                "img/eterna150.png"
+                "./img/eterna150.png"
             ],
             "dimension_images": [
-                "img/eterna150_dim1.png"
+                "./img/eterna150_dim1.png"
             ]
         }
     },
@@ -1589,9 +1589,9 @@
                 "Advanced, reliable, and compact BIOS card."
             ],
             "images": [
-                "img/kineo.png",
-                "img/kineo_dim.png",
-                "img/kineo_cu.png"
+                "./img/kineo.png",
+                "./img/kineo_dim.png",
+                "./img/kineo_cu.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -1639,8 +1639,8 @@
                 "Endless screw at five principles."
             ],
             "images": [
-                "img/xtilus.png",
-                "img/xtilus_cu.png"
+                "./img/xtilus.png",
+                "./img/xtilus_cu.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -1677,7 +1677,7 @@
                 "Flashing Light"
             ],
             "dimension_images": [
-                "img/xtilus_dim1.png"
+                "./img/xtilus_dim1.png"
             ]
         },
         "plus": {
@@ -1694,8 +1694,8 @@
                 "Automatic programming of working time and total control of safety devices."
             ],
             "images": [
-                "img/plus_l.png",
-                "img/plus_l_cu.png"
+                "./img/plus_l.png",
+                "./img/plus_l_cu.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -1729,7 +1729,7 @@
                 "Flashing Light"
             ],
             "dimension_images": [
-                "img/plus_l_dim1.png"
+                "./img/plus_l_dim1.png"
             ]
         },
         "maxiart": {
@@ -1746,7 +1746,7 @@
                 "Several features to best manage the MAXIART range, maximizing the performances of your installation."
             ],
             "images": [
-                "img/maxiartk.png"
+                "./img/maxiartk.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -1778,9 +1778,9 @@
                 ]
             },
             "dimension_images": [
-                "img/maxiartk_dim1.png",
-                "img/maxiartk_dim2.png",
-                "img/maxiartk_dim3.png"
+                "./img/maxiartk_dim1.png",
+                "./img/maxiartk_dim2.png",
+                "./img/maxiartk_dim3.png"
             ]
         },
         "intrxl": {
@@ -1797,8 +1797,8 @@
                 "DIE CAST ALUMINIUM STRUCTURE DESIGNED FOR EXTREME CONDITIONS."
             ],
             "images": [
-                "img/rxl.png",
-                "img/rxl2.png"
+                "./img/rxl.png",
+                "./img/rxl2.png"
             ],
             "technical_features": {
                 "Power Supply": [
@@ -1868,10 +1868,10 @@
                 ]
             },
             "images": [
-                "img/ja_300.png"
+                "./img/ja_300.png"
             ],
             "dimension_images": [
-                "img/ja_300_dim1.png"
+                "./img/ja_300_dim1.png"
             ]
         },
         "ja350dc": {
@@ -1912,10 +1912,10 @@
                 ]
             },
             "images": [
-                "img/ja_350.png"
+                "./img/ja_350.png"
             ],
             "dimension_images": [
-                "img/ja_350_dim1.png"
+                "./img/ja_350_dim1.png"
             ]
         },
         "ja400ac": {
@@ -1957,11 +1957,11 @@
                 ]
             },
             "images": [
-                "img/ja_400.png"
+                "./img/ja_400.png"
             ],
             "dimension_images": [
-                "img/ja_400_dim1.png",
-                "img/ja_400_dim2.png"
+                "./img/ja_400_dim1.png",
+                "./img/ja_400_dim2.png"
             ]
         }
     }

@@ -1,94 +1,99 @@
-let details = {}; // Store JSON data here
+// Global variable to store product data
+let productData = {};
 
-// Function to get query parameter value
-function getQueryParam(param) {
+// Function to load products based on URL parameter
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the category from URL parameter
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-}
+    const category = urlParams.get('category');
+    
+    if (category) {
+        // Update heading
+        updateCategoryHeading(category);
+        
+        // Fetch the product data
+        fetch("./js/details.json")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Failed to load product data");
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Store the data globally
+                productData = data;
+                
+                // Display products for the selected category
+                displayProducts(category, data[category]);
+            })
+            .catch(error => console.error("Error loading product data:", error));
+    } else {
+        console.error("No category specified in URL");
+    }
+});
 
-// Function to load products from JSON file
-async function loadProductsFromJSON() {
-    try {
-        const response = await fetch('js/details.json'); // Fetch JSON file
-        if (!response.ok) throw new Error('Failed to load products');
-        details = await response.json(); // Parse JSON data
-
-        // Once products are loaded, display them
-        displayProducts();
-    } catch (error) {
-        console.error("Error loading products:", error);
+// Function to update category heading
+function updateCategoryHeading(category) {
+    const headingElement = document.getElementById("category-heading");
+    
+    if (headingElement) {
+        let headingText = "";
+        
+        switch(category) {
+            case "rolling":
+                headingText = "Rolling Shutter Motors";
+                break;
+            case "sliding":
+                headingText = "Sliding Gate Motors";
+                break;
+            case "swing":
+                headingText = "Swing Gate Motors";
+                break;
+            default:
+                headingText = "Automation Products";
+        }
+        
+        headingElement.textContent = headingText;
     }
 }
 
-// Function to display products based on category
-// function displayProducts() {
-//     const category = getQueryParam('category') || 'rolling'; // Default category
-
-//     // if (!document.getElementById("product-title") || !document.getElementById("product-list")) {
-//     //     console.error("Product display elements not found in DOM.");
-//     //     return;
-//     // }
-
-//     if (details[category]) {
-//         console.log(details[category]);
-//         // document.getElementById("product-title").textContent = 
-//         //     category.charAt(0).toUpperCase() + category.slice(1) + " Products";
-//         // document.getElementById("product-list").innerHTML = 
-//         //     products[category].map(item => `<li>${item}</li>`).join('');
-//     } else {
-//         console.log("Failed");
-//         // document.getElementById("product-title").textContent = "Category Not Found";
-//         // document.getElementById("product-list").innerHTML = "<li>No products available.</li>";
-//     }
-
-//     // Update URL only if needed
-//     // const newUrl = `/products?category=${category}`;
-//     // if (window.location.pathname + window.location.search !== newUrl) {
-//     //     window.history.pushState({}, "", newUrl);
-//     // }
-// }
-
-
-function displayProducts() {
-    const category = getQueryParam('category') || 'rolling'; // Default category
-    const productContainer = document.getElementById("product-display");
-    const categoryHeading = document.getElementById("category-heading");
-    productContainer.innerHTML = ""; // Clear previous content
-
-    if(category==="rolling")
-        categoryHeading.innerText = "Rolling Shutter Motors";
-    else if(category==="sliding")
-        categoryHeading.innerText = "Sliding Gate Motors";
-    else if(category==="swing")
-        categoryHeading.innerText = "Swing Gate Motors";
-
-    const categoryProducts = details[category];
-    // console.log(categoryProducts);
-    if (!categoryProducts) {
-        productContainer.innerHTML = "<p>No products found in this category.</p>";
+// Function to display products in the container
+function displayProducts(category, products) {
+    const container = document.getElementById("product-display");
+    
+    if (!container) {
+        console.error("Product display container not found");
         return;
     }
-
-    Object.values(categoryProducts).forEach((product, index) => {
-        const truncatedDesc = product.description.join(". ").split(". ").slice(0, 2).join(". ") + "...";
-
-        const productHTML = `
-            <div class="product-item">
+    
+    // Clear any existing content
+    container.innerHTML = "";
+    
+    // Create HTML for each product
+    Object.keys(products).forEach((productId, index) => {
+        const product = products[productId];
+        const productElement = document.createElement("div");
+        productElement.className = "product-item";
+        
+        // Determine the first image to display
+        const imageUrl = product.images && product.images.length > 0 
+            ? product.images[0] 
+            : "./img/placeholder.png";
+            
+        // Create HTML content for the product item
+        productElement.innerHTML = `
+            <div class="product-image-info-wrapper">
                 <div class="product-image">
-                    <img src="${product.images[0]}" alt="img/logos/allmatic_logo.jpg">
+                    <img src="${imageUrl}" alt="${product.name}" loading="lazy">
                 </div>
                 <div class="product-info">
-                    <div class="product-name">${product.name}</div>
-                    <div class="product-description">${truncatedDesc}</div>
-                    <a href="products.html?id=${product.id}" class="read-more">Read More</a>
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-description">${product.description[0]}</p>
+                    <a href="product-details.html?category=${category}&id=${productId}" class="read-more">Read More</a>
                 </div>
             </div>
         `;
-        productContainer.innerHTML += productHTML;
+        
+        container.appendChild(productElement);
     });
 }
-
-// Ensure DOM is ready before executing scripts
-document.addEventListener("DOMContentLoaded", () => {
-    loadProductsFromJSON();
-});

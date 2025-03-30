@@ -104,7 +104,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: #e5eaed;      
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -117,18 +117,40 @@
 }
 
 
+.owl-carousel {
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the whole carousel */
+}
+
+.header-carousel {
+    background-color: #e5eaed; /* Light gray background for the entire carousel */
+}
+
 .owl-carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f8f9fa; /* Light background to fill extra space */
-    height: 50vh; /* Adjust height dynamically based on viewport */
+    background: #e5eaed; 
+    /* height: 50vh;  */
+    height: 70vh;
+    position:relative;
 }
 
 .owl-carousel-item img {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensures the full image is visible without cropping */
+    object-fit: contain;  */
+    object-fit: contain;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.container-fluid.p-0.pb-5.position-relative {
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; /* Remove any bottom margin */
+    border-bottom: none; /* Very light gray overlay */
 }
 
 /*** logo ***/
@@ -258,9 +280,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: #040202;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid black;
     font-size: 22px;
     transition: .5s;
 }
@@ -289,7 +311,7 @@
     width: 15px;
     height: 15px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid black;
     transition: .5s;
 }
 
@@ -301,7 +323,7 @@
     top: 4px;
     left: 4px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid black;
 }
 
 .header-carousel .owl-dot.active {

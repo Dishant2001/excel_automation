@@ -38,16 +38,25 @@ function updateCategoryHeading(category) {
     
     if (headingElement) {
         let headingText = "";
+
+        let pageHeader = document.querySelector('.page-header');
         
         switch(category) {
             case "rolling":
                 headingText = "Rolling Shutter Motors";
+                // console.log("Page header element:", document.querySelector('.page-header'));
+                // pageHeader.style.removeProperty("background");
+                // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_4.png) center center no-repeat !important;"
                 break;
             case "sliding":
                 headingText = "Sliding Gate Motors";
+                // pageHeader.style.removeProperty("background");
+                // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_6.png) center center no-repeat !important;"
                 break;
             case "swing":
                 headingText = "Swing Gate Motors";
+                // pageHeader.style.removeProperty("background");
+                // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_5.png) center center no-repeat !important;"
                 break;
             default:
                 headingText = "Automation Products";

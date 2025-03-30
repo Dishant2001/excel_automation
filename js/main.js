@@ -103,5 +103,21 @@ var panelOpen = false;
 })(jQuery);
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Delivering Excellence – Official Distributors of These Prestigious Brands";
+    const element = document.getElementById("typewriter-text");
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 30); // Adjust speed here
+        }
+    }
+    if(element!==null)
+        typeWriter();
+});
+
 
 

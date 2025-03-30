@@ -245,7 +245,7 @@ function displayProductDetails(product, category) {
     // Back to products button
     html += `
         <div class="mt-4">
-            <a href="products.html?category=${category}" class="btn btn-primary">
+            <a href="products.html?category=${category}" class="btn btn-primary back-to-products">
                 <i class="fa fa-arrow-left me-2"></i>Back to Products
             </a>
         </div>

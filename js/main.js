@@ -104,7 +104,7 @@ var panelOpen = false;
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const text = "Delivering Excellence – Official Distributors of These Prestigious Brands";
+    const text = "India's leading provider of Premium Entrance Automation Systems";
     const element = document.getElementById("typewriter-text");
     let index = 0;
 

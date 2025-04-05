@@ -2214,131 +2214,183 @@
             ]
         }
     },
-    "central":{
-        "titanmotor":{
+    "central": {
+        "titanmotor": {
             "id": "titanmotor",
             "name": "ACM Titan CENTRAL MOTOR",
             "name_list": [
-              "TITAN E HR",
-              "TITAN 200 BM"
+                "TITAN E HR",
+                "TITAN 200 BM"
             ],
             "description": [
-              "Available for 170kg and 280kg capacity",
-              "The Titan motor is a wonder for all types of shutters",
-              "High and sound performance for smooth operation",
-              "Comes with an electro brake and brake release kit for key switch",
-              "Works efficiently even after long term use",
-              "Optimum for efficient use"
+                "Available for 170kg and 280kg capacity",
+                "The Titan motor is a wonder for all types of shutters",
+                "High and sound performance for smooth operation",
+                "Comes with an electro brake and brake release kit for key switch",
+                "Works efficiently even after long term use",
+                "Optimum for efficient use"
             ],
             "technical_features": {
-              "OUTPUT TORQUE ON MOTOR": [
-                "170 Nm",
-                "280 Nm"
-              ],
-              "CONSUMPTION": [
-                "2.7 A",
-                "5.4 A"
-              ],
-              "WEIGHT": [
-                "7 kg",
-                "13 kg"
-              ],
-              "POWER": [
-                "630 W",
-                "1260 W"
-              ],
-              "TUBE ROLLING": [
-                "60 mm",
-                "60 mm"
-              ],
-              "PULLEY": [
-                "200 mm",
-                "200 mm"
-              ],
-              "CAPACITY": [
-                "170 kg",
-                "280 kg"
-              ],
-              "BRAKE": [
-                "ELECTROBRAKE AVAILABLE",
-                "ELECTROBRAKE AVAILABLE"
-              ]
+                "OUTPUT TORQUE ON MOTOR": [
+                    "170 Nm",
+                    "280 Nm"
+                ],
+                "CONSUMPTION": [
+                    "2.7 A",
+                    "5.4 A"
+                ],
+                "WEIGHT": [
+                    "7 kg",
+                    "13 kg"
+                ],
+                "POWER": [
+                    "630 W",
+                    "1260 W"
+                ],
+                "TUBE ROLLING": [
+                    "60 mm",
+                    "60 mm"
+                ],
+                "PULLEY": [
+                    "200 mm",
+                    "200 mm"
+                ],
+                "CAPACITY": [
+                    "170 kg",
+                    "280 kg"
+                ],
+                "BRAKE": [
+                    "ELECTROBRAKE AVAILABLE",
+                    "ELECTROBRAKE AVAILABLE"
+                ]
             },
             "images": [
-              "./img/titan_ehr.png",
-              "./img/titan_200.png",
-              "./img/electrobrake.png"
+                "./img/titan_ehr.png",
+                "./img/titan_200.png",
+                "./img/electrobrake.png"
             ],
             "dimension_images": [
                 "./img/titan_dim1.png",
                 "./img/titan_dim2.png"
-              ]
-          },
-          "uniko":{
+            ]
+        },
+        "uniko": {
             "id": "uniko",
             "name": "Elsamec Uniko CENTRAL MOTOR",
             "name_list": [
-              "UNIKO 1M EVOLUTION",
-              "UNIKO 2M EVOLUTION"
+                "UNIKO 1M EVOLUTION",
+                "UNIKO 2M EVOLUTION"
             ],
             "description": [
-              "Available for 180kg and 260kg capacity",
-              "The Uniko Evolution motor is a wonder for all types of shutters",
-              "High and sound performance for smooth operation",
-              "Comes with an electro brake and brake release kit for key switch",
-              "Works efficiently even after long term use",
-              "Optimum for efficient use"
+                "Available for 180kg and 260kg capacity",
+                "The Uniko Evolution motor is a wonder for all types of shutters",
+                "High and sound performance for smooth operation",
+                "Comes with an electro brake and brake release kit for key switch",
+                "Works efficiently even after long term use",
+                "Optimum for efficient use"
             ],
             "technical_features": {
-              "OUTPUT TORQUE ON MOTOR": [
-                "144 Nm",
-                "245 Nm"
-              ],
-              "POWER SUPPLY": [
-                "230/115 V",
-                "230/115 V"
-              ],
-              "OUTPUT SPEED": [
-                "9 rpm",
-                "9 rpm"
-              ],
-              "FREQUENCY": [
-                "50~60 Hz",
-                "50~60 Hz"
-              ],
-              "POWER": [
-                "450 W",
-                "700 W"
-              ],
-              "INSTALLATION SHAFT": [
-                "60/48 mm",
-                "60/48 mm"
-              ],
-              "PROTECTION CLASS": [
-                "IP40",
-                "IP40"
-              ],
-              "LIFT CAPACITY": [
-                "180 kg",
-                "260 kg"
-              ],
-              "BRAKE": [
-                "ELECTROBRAKE AVAILABLE",
-                "ELECTROBRAKE AVAILABLE"
-              ]
+                "OUTPUT TORQUE ON MOTOR": [
+                    "144 Nm",
+                    "245 Nm"
+                ],
+                "POWER SUPPLY": [
+                    "230/115 V",
+                    "230/115 V"
+                ],
+                "OUTPUT SPEED": [
+                    "9 rpm",
+                    "9 rpm"
+                ],
+                "FREQUENCY": [
+                    "50~60 Hz",
+                    "50~60 Hz"
+                ],
+                "POWER": [
+                    "450 W",
+                    "700 W"
+                ],
+                "INSTALLATION SHAFT": [
+                    "60/48 mm",
+                    "60/48 mm"
+                ],
+                "PROTECTION CLASS": [
+                    "IP40",
+                    "IP40"
+                ],
+                "LIFT CAPACITY": [
+                    "180 kg",
+                    "260 kg"
+                ],
+                "BRAKE": [
+                    "ELECTROBRAKE AVAILABLE",
+                    "ELECTROBRAKE AVAILABLE"
+                ]
             },
             "images": [
-              "./img/uniko.png",
-              "./img/uniko_2m.png",
-              "./img/raindrop.png"
+                "./img/uniko.png",
+                "./img/uniko_2m.png",
+                "./img/raindrop.png"
             ],
             "dimension_images": [
                 "./img/uniko_dim1.png",
                 "./img/uniko_dim2.png",
                 "./img/uniko_dim3.png"
             ]
-          }
-          
-          
-    }
+        }
+    },
+    "accessories": [
+        {
+            "name": "Allmatic Flashing Lamp",
+            "src": "./img/accessories/allmatic_flashing_lamp.png"
+        },
+        {
+            "name": "BIOS Control Card",
+            "src": "./img/accessories/bios_control_card.png"
+        },
+        {
+            "name": "CT Inverter Control Card",
+            "src": "./img/accessories/ct_inverter_control_card.png"
+        },
+        {
+            "name": "DC Lamp",
+            "src": "./img/accessories/dc_lamp.png"
+        },
+        {
+            "name": "Flashing Lamp",
+            "src": "./img/accessories/flashing_lamp.jpg"
+        },
+        {
+            "name": "4-Button Remote",
+            "src": "./img/accessories/for_4_remote.png"
+        },
+        {
+            "name": "Jielong Control Card",
+            "src": "./img/accessories/jielong_control_card.webp"
+        },
+        {
+            "name": "Jielong Remote",
+            "src": "./img/accessories/jielong_remote.webp"
+        },
+        {
+            "name": "Photocell FT All 7",
+            "src": "./img/accessories/photocell_ft_all_7.png"
+        },
+        {
+            "name": "Photocell",
+            "src": "./img/accessories/photocell.jpg"
+        },
+        {
+            "name": "Gear Rack",
+            "src": "./img/accessories/rack.png"
+        },
+        {
+            "name": "Remote",
+            "src": "./img/accessories/remote.jpg"
+        },
+        {
+            "name": "SL Control Card",
+            "src": "./img/accessories/sl_control_card.jpg"
+        }
+    ]
 }

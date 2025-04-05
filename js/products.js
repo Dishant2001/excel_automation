@@ -58,6 +58,21 @@ function updateCategoryHeading(category) {
                 // pageHeader.style.removeProperty("background");
                 // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_5.png) center center no-repeat !important;"
                 break;
+            case "door":
+                headingText = "Sliding Door Motors";
+                // pageHeader.style.removeProperty("background");
+                // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_5.png) center center no-repeat !important;"
+                break;
+            case "highspeed":
+                headingText = "High Speed Door Motors";
+                // pageHeader.style.removeProperty("background");
+                // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_5.png) center center no-repeat !important;"
+                break;
+            case "central":
+                headingText = "Central Motors";
+                // pageHeader.style.removeProperty("background");
+                // pageHeader.style.background = "linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/about/excel_5.png) center center no-repeat !important;"
+                break;
             default:
                 headingText = "Automation Products";
         }

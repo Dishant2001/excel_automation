@@ -1345,7 +1345,9 @@
             "dimension_images": [
                 "./img/jlbg_3500_dim1.png"
             ]
-        },
+        }
+    },
+    "door": {
         "ja4.2mtr": {
             "id": "ja4.2mtr",
             "name": "JA - 4.2 MTR SECTION SLIDING DOOR OPERATOR",
@@ -1964,5 +1966,379 @@
                 "./img/ja_400_dim2.png"
             ]
         }
+    },
+    "highspeed": {
+        "speedy_vsf_6_5": {
+            "id": "speedy_vsf_6_5",
+            "name": "SPEEDY VSF 6.5 - HIGH SPEED DOOR MOTOR",
+            "name_list": [
+                "SPEEDY VSF 6.5"
+            ],
+            "description": [
+                "Available for 16sq.m of door.",
+                "The VSF series door motors are perfect for long time use.",
+                "Traditional installation with side mounting using worm gear reducer.",
+                "Mechanical and electronic limit switch.",
+                "Automatic and deadman control, with dry contact switches, integrated in the board."
+            ],
+            "technical_features": {
+                "DOOR SIZE": [
+                    "16 Sq.m"
+                ],
+                "INPUT VOLTAGE": [
+                    "230/50 V/Hz"
+                ],
+                "OUTPUT SPEED ON MOTOR": [
+                    "93 RPM"
+                ],
+                "OUTPUT TORQUE": [
+                    "285 Nm"
+                ],
+                "MAXIMUM LIFTING CAPACITY": [
+                    "186 Kg"
+                ],
+                "OUTPUT SPEED": [
+                    "177 RPM"
+                ],
+                "POWER": [
+                    "1700 W"
+                ],
+                "CONSUMPTION": [
+                    "7.2 A"
+                ],
+                "FREQUENCY": [
+                    "50 Hz"
+                ]
+            },
+            "images": [
+                "./img/vsf65.png"
+            ],
+            "dimension_images": [
+                "./img/vsf65_dim1.png",
+                "./img/vsf65_dim2.png",
+                "./img/vsf65_dim3.png"
+            ]
+        },
+        "speedy_vsf_10": {
+            "id": "speedy_vsf_10",
+            "name": "SPEEDY VSF 10 - HIGH SPEED DOOR MOTOR",
+            "name_list": [
+                "SPEEDY VSF 10"
+            ],
+            "description": [
+                "Available for 36sq.m of door.",
+                "The VSF series door motors are perfect for long time use.",
+                "Traditional installation with side mounting using worm gear reducer.",
+                "Mechanical and electronic limit switch.",
+                "Automatic and deadman control, with dry contact switches, integrated in the board."
+            ],
+            "technical_features": {
+                "DOOR SIZE": [
+                    "36 Sq.m"
+                ],
+                "INPUT VOLTAGE": [
+                    "230/50 V/Hz"
+                ],
+                "OUTPUT SPEED ON MOTOR": [
+                    "47 RPM"
+                ],
+                "OUTPUT TORQUE": [
+                    "4 Nm"
+                ],
+                "MAXIMUM LIFTING CAPACITY": [
+                    "257 Kg"
+                ],
+                "OUTPUT SPEED": [
+                    "89 RPM"
+                ],
+                "POWER": [
+                    "1150 W"
+                ],
+                "CONSUMPTION": [
+                    "7.2 A"
+                ],
+                "FREQUENCY": [
+                    "50 Hz"
+                ]
+            },
+            "images": [
+                "./img/vsf10.png"
+            ],
+            "dimension_images": [
+                "./img/vsf10_dim1.png",
+                "./img/vsf10_dim2.png",
+                "./img/vsf10_dim3.png"
+            ]
+        },
+        "gyj": {
+            "id": "gyj",
+            "name": "GYJ SERIES - HIGH SPEED DOOR MOTOR",
+            "name_list": [
+                "GYJ60",
+                "GYJ80",
+                "GYJ100",
+                "GYJ150"
+            ],
+            "description": [
+                "Available for 15m², 18m² and 25m² of door.",
+                "The GYJ door motors are perfect for long time use.",
+                "It has a quick release handle that is convenient for opening and closing in time of emergency.",
+                "Comes with manual chain of universal design.",
+                "Motor integrated design, limit, high accuracy that is convenient for installation and adjusting.",
+                "Precise worm gear and worm drive and smooth transmission, low noise and long service life."
+            ],
+            "technical_features": {
+                "DOOR SIZE": [
+                    "15 Sq.m",
+                    "18 Sq.m",
+                    "25 Sq.m",
+                    "30 Sq.m"
+                ],
+                "INPUT VOLTAGE": [
+                    "220/50 V/Hz",
+                    "220/50 V/Hz",
+                    "220/50 V/Hz",
+                    "380/50 V/Hz"
+                ],
+                "RATED POWER": [
+                    "800 W",
+                    "1000 W",
+                    "1500 W",
+                    "2200 W"
+                ],
+                "START UP TORQUE": [
+                    "60 Nm",
+                    "80 Nm",
+                    "100 Nm",
+                    "150 Nm"
+                ],
+                "NO LOAD RUNNING TIME": [
+                    "90 r/min",
+                    "90 r/min",
+                    "90 r/min",
+                    "90 r/min"
+                ],
+                "THERMAL PROTECTIVE TEMPERATURE": [
+                    "120 °C",
+                    "120 °C",
+                    "120 °C",
+                    "120 °C"
+                ],
+                "PROTECTIVE LEVEL": [
+                    "IP54",
+                    "IP54",
+                    "IP54",
+                    "IP54"
+                ],
+                "AMBIENT TEMPERATURE": [
+                    "-20 to +45 °C",
+                    "-20 to +45 °C",
+                    "-20 to +45 °C",
+                    "-20 to +45 °C"
+                ],
+                "SUPPORTIVE POWER CONTROL": [
+                    "SPLIT TYPE",
+                    "SPLIT TYPE",
+                    "SPLIT TYPE",
+                    "SPLIT TYPE"
+                ]
+            },
+            "images": [
+                "./img/gyj.png"
+            ],
+            "dimension_images": [
+                "./img/gyj_dim1.png",
+                "./img/gyj_dim2.png"
+            ]
+        },
+        "gym": {
+            "id": "gym",
+            "name": "GYM SERIES - INDUSTRIAL DOOR OPERATOR",
+            "name_list": [
+                "GYM 500S-2",
+                "GYM 650S-2"
+            ],
+            "description": [
+                "Available for 100m² and 120m² of door.",
+                "The GYM door motors are perfect for long time use.",
+                "It has a quick release handle that is convenient for opening and closing in time of emergency.",
+                "Comes with manual chain of universal design.",
+                "Motor integrated design, limit, high accuracy that is convenient for installation and adjusting.",
+                "Precise worm gear and worm drive and smooth transmission, low noise and long service life."
+            ],
+            "technical_features": {
+                "DOOR SIZE": [
+                    "100 Sq.m",
+                    "120 Sq.m"
+                ],
+                "INPUT VOLTAGE": [
+                    "380 V",
+                    "380 V"
+                ],
+                "RATED POWER": [
+                    "1200 W",
+                    "1500 W"
+                ],
+                "START UP TORQUE": [
+                    "500 Nm",
+                    "650 Nm"
+                ],
+                "NO LOAD RUNNING TIME": [
+                    "25 min",
+                    "25 min"
+                ],
+                "THERMAL PROTECTIVE TEMPERATURE": [
+                    "120 °C",
+                    "120 °C"
+                ],
+                "PROTECTIVE LEVEL": [
+                    "IP54",
+                    "IP54"
+                ],
+                "AMBIENT TEMPERATURE": [
+                    "-20 to +45 °C",
+                    "-20 to +45 °C"
+                ],
+                "TYPE OF LIMIT SWITCH": [
+                    "ELECTRONIC LIMIT",
+                    "ELECTRONIC LIMIT"
+                ]
+            },
+            "images": [
+                "./img/gym.png",
+                "./img/gym_cu.png"
+            ],
+            "dimension_images": [
+                "./img/gym_dim1.png",
+                "./img/gym_dim2.png"
+            ]
+        }
+    },
+    "central":{
+        "titanmotor":{
+            "id": "titanmotor",
+            "name": "ACM Titan CENTRAL MOTOR",
+            "name_list": [
+              "TITAN E HR",
+              "TITAN 200 BM"
+            ],
+            "description": [
+              "Available for 170kg and 280kg capacity",
+              "The Titan motor is a wonder for all types of shutters",
+              "High and sound performance for smooth operation",
+              "Comes with an electro brake and brake release kit for key switch",
+              "Works efficiently even after long term use",
+              "Optimum for efficient use"
+            ],
+            "technical_features": {
+              "OUTPUT TORQUE ON MOTOR": [
+                "170 Nm",
+                "280 Nm"
+              ],
+              "CONSUMPTION": [
+                "2.7 A",
+                "5.4 A"
+              ],
+              "WEIGHT": [
+                "7 kg",
+                "13 kg"
+              ],
+              "POWER": [
+                "630 W",
+                "1260 W"
+              ],
+              "TUBE ROLLING": [
+                "60 mm",
+                "60 mm"
+              ],
+              "PULLEY": [
+                "200 mm",
+                "200 mm"
+              ],
+              "CAPACITY": [
+                "170 kg",
+                "280 kg"
+              ],
+              "BRAKE": [
+                "ELECTROBRAKE AVAILABLE",
+                "ELECTROBRAKE AVAILABLE"
+              ]
+            },
+            "images": [
+              "./img/titan_ehr.png",
+              "./img/titan_200.png",
+              "./img/electrobrake.png"
+            ],
+            "dimension_images": [
+                "./img/titan_dim1.png",
+                "./img/titan_dim2.png"
+              ]
+          },
+          "uniko":{
+            "id": "uniko",
+            "name": "Elsamec Uniko CENTRAL MOTOR",
+            "name_list": [
+              "UNIKO 1M EVOLUTION",
+              "UNIKO 2M EVOLUTION"
+            ],
+            "description": [
+              "Available for 180kg and 260kg capacity",
+              "The Uniko Evolution motor is a wonder for all types of shutters",
+              "High and sound performance for smooth operation",
+              "Comes with an electro brake and brake release kit for key switch",
+              "Works efficiently even after long term use",
+              "Optimum for efficient use"
+            ],
+            "technical_features": {
+              "OUTPUT TORQUE ON MOTOR": [
+                "144 Nm",
+                "245 Nm"
+              ],
+              "POWER SUPPLY": [
+                "230/115 V",
+                "230/115 V"
+              ],
+              "OUTPUT SPEED": [
+                "9 rpm",
+                "9 rpm"
+              ],
+              "FREQUENCY": [
+                "50~60 Hz",
+                "50~60 Hz"
+              ],
+              "POWER": [
+                "450 W",
+                "700 W"
+              ],
+              "INSTALLATION SHAFT": [
+                "60/48 mm",
+                "60/48 mm"
+              ],
+              "PROTECTION CLASS": [
+                "IP40",
+                "IP40"
+              ],
+              "LIFT CAPACITY": [
+                "180 kg",
+                "260 kg"
+              ],
+              "BRAKE": [
+                "ELECTROBRAKE AVAILABLE",
+                "ELECTROBRAKE AVAILABLE"
+              ]
+            },
+            "images": [
+              "./img/uniko.png",
+              "./img/uniko_2m.png",
+              "./img/raindrop.png"
+            ],
+            "dimension_images": [
+                "./img/uniko_dim1.png",
+                "./img/uniko_dim2.png",
+                "./img/uniko_dim3.png"
+            ]
+          }
+          
+          
     }
 }

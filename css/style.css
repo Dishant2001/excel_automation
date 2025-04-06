@@ -105,6 +105,7 @@
     z-index:1000;
 }
 
+
 .navbar{
     height:4.7rem;
 }
@@ -255,6 +256,7 @@
         opacity: 1;
     }
 }
+
 
 
 /*** Header ***/
@@ -937,4 +939,15 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #e5eaed !important;
+        padding: 1rem;
+        /* optional spacing */
+        border-radius: 0 0 8px 8px;
+        /* optional rounded corners */
+    }
 }

@@ -91,6 +91,7 @@ function displayProducts(category, products) {
     if (category !== "accessories") {
 
         const container = document.getElementById("product-display");
+        const wrapper = document.getElementById("video-wrapper");
 
         if (!container) {
             console.error("Product display container not found");
@@ -99,6 +100,28 @@ function displayProducts(category, products) {
 
         // Clear any existing content
         container.innerHTML = "";
+        const video = document.createElement('video');
+        // video.autoplay = true;
+        // video.muted = true; // Required for autoplay in most browsers
+        video.loop = true; // Optional: repeat video
+        video.playsInline = true; // Prevents fullscreen autoplay on mobile
+        video.controls = true; // Set to true if you still want controls
+
+        const source = document.createElement('source');
+        if (category === "rolling")
+            source.src = './videos/rolling_shutter.mp4';
+        else if(category==="sliding")
+            source.src = './videos/sliding_gate.mp4'
+        else if(category==="swing")
+            source.src = './videos/swing_gate.mp4'
+        else
+            wrapper.style.display = "none";
+        source.type = 'video/mp4';
+
+        video.appendChild(source);
+        video.innerHTML += 'Your browser does not support the video tag.';
+
+        wrapper.appendChild(video);
 
         // Create HTML for each product
         Object.keys(products).forEach((productId, index) => {

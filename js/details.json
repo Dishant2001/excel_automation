@@ -427,6 +427,47 @@
                 "./img/rsm4000.png",
                 "./img/rsm4000_bracket.png"
             ]
+        },
+        "titanSide": {
+            "id": "titanSide",
+            "name": "Titan Side Motor",
+            "name_list": [
+                "Titan Side Motor"
+            ],
+            "description": [
+                "The Titan side motor is the best of the Italian automation systems.",
+                "They are perfect for long time use.",
+                "It has a quick release handle that is convenient for opening and closing in time of emergency.",
+                "Comes with manual chain of universal design.",
+                "Motor integrated design, limit, high accuracy that is convenient for installation and adjusting.",
+                "Precise functioning with easily understandable installation instructions."
+            ],
+            "technical_features": {
+                "POWER SUPPLY": [
+                    "600 W"
+                ],
+                "TORQUE": [
+                    "412 Nm"
+                ],
+                "SPEED": [
+                    "4.6 RPM"
+                ],
+                "WEIGHT": [
+                    "13.4 kg"
+                ],
+                "WORK TIME": [
+                    "5 min"
+                ],
+                "MAXIMUM LIFTING CAPACITY": [
+                    "600 kg"
+                ]
+            },
+            "images": [
+                "./img/titanSide.png"
+            ],
+            "dimension_images": [
+                "./img/titanSide_dim1.png"
+            ]
         }
     },
     "sliding": {
@@ -634,6 +675,71 @@
             "dimension_images": [
                 "./img/xl_power_dim1.png",
                 "./img/xl_power_dim2.png"
+            ]
+        },
+        "big22": {
+            "id": "big22",
+            "name": "Big 2.2",
+            "name_list": [
+                "Big 2.2"
+            ],
+            "description": [
+                "Traktor is the solution for heavy gates that require smooth and efficient operation.",
+                "Maximum safety and compliance with current regulations regarding impact forces.",
+                "Comes with integrated control unit.",
+                "The high-quality components and the integrated ventilation system allow a semi-intensive use, even in industrial contexts.",
+                "Magnetic limit switch available.",
+                "Using this design is the best for a maximum capacity of 2200kg.",
+                "The control unit guarantees high service factors and is able to control speeds with utmost precision.",
+                "Integrated radio receiver and digital display simplify its use."
+            ],
+            "images": [
+                "./img/big22.png",
+                "./img/big22_2.png",
+                "./img/big22_cu.png"
+            ],
+            "technical_features": {
+                "Power Supply": [
+                    "230 Vac 50/60Hz"
+                ],
+                "Motor Absorption": [
+                    "3.45 A"
+                ],
+                "Maximum Gate Weight": [
+                    "2200 Kg"
+                ],
+                "Speed": [
+                    "10 m/min"
+                ],
+                "Maximum Thrust": [
+                    "1150 N"
+                ],
+                "Service": [
+                    "70%"
+                ],
+                "Recommended Daily Cycles": [
+                    "800"
+                ],
+                "Capacitor": [
+                    "16 µF"
+                ],
+                "Protection Class": [
+                    "IP 44"
+                ],
+                "Consecutive Cycles": [
+                    "15"
+                ],
+                "Control Unit": [
+                    "BIOS 1"
+                ]
+            },
+            "additional_accessories": [
+                "Pair of Photocell FT ALL7",
+                "Flashing Light With Support and Antenna",
+                "Remote"
+            ],
+            "dimension_images": [
+                "./img/big22_dim1.png"
             ]
         },
         "traktor": {

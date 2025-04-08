@@ -1262,6 +1262,100 @@
                 "./img/jlsd_3500_dim3.png"
             ]
         },
+        "jlsd4500": {
+            "id": "jlsd4500",
+            "name": "JIELONG SD4500",
+            "name_list": [
+                "JIELONG SD4500"
+            ],
+            "description": [
+                "The high capacity Jielong sliding gate motor is optimal for use of up to 4500kg capacity.",
+                "It comes with a Smart Main Board that runs for a long time and ensures optimal functioning.",
+                "Comes with a pure copper coil that makes the motor highly efficient and durable.",
+                "It has a compact structure for saving space and delivering a neat look.",
+                "It has a DC supply for long-term use."
+            ],
+            "technical_features": {
+                "Torque": [
+                    "107 N.m"
+                ],
+                "Rated Power": [
+                    "600 W"
+                ],
+                "Motor Speed": [
+                    "1600 rpm"
+                ],
+                "Gate Speed": [
+                    "15 m/min"
+                ],
+                "Output Voltage": [
+                    "DC 36V"
+                ],
+                "Temperature": [
+                    "-30°C to 65°C"
+                ],
+                "Protection Class": [
+                    "IP 65"
+                ],
+                "Limit Switch": [
+                    "Spring/Magnetic"
+                ]
+            },
+            "images": [
+                "./img/jlsd_4500.png",
+                "./img/jlsd_4500_cu.png"
+            ],
+            "dimension_images": [
+                "./img/jlsd_4500_dim1.png"
+            ]
+        },
+        "jlbg3500": {
+            "id": "jlbg3500",
+            "name": "JIELONG BG3500",
+            "name_list": [
+                "JIELONG BG3500"
+            ],
+            "description": [
+                "The high capacity Jielong sliding gate motor is optimal for use of up to 3500kg capacity.",
+                "It comes with a Smart Main Board that runs for a long time and ensures optimal functioning.",
+                "Comes with a pure copper coil that makes the motor highly efficient and durable.",
+                "It has a compact structure for saving space and delivering a neat look.",
+                "It has a DC supply for long-term use."
+            ],
+            "technical_features": {
+                "Torque": [
+                    "80 N.m"
+                ],
+                "Rated Power": [
+                    "430 W"
+                ],
+                "Motor Speed": [
+                    "1700 rpm"
+                ],
+                "Gate Speed": [
+                    "15 m/min"
+                ],
+                "Output Voltage": [
+                    "DC 36V"
+                ],
+                "Temperature": [
+                    "-30°C to 65°C"
+                ],
+                "Protection Class": [
+                    "IP 65"
+                ],
+                "Limit Switch": [
+                    "Spring"
+                ]
+            },
+            "images": [
+                "./img/jlbg_3500.png",
+                "./img/jlbg_3500_cu.png"
+            ],
+            "dimension_images": [
+                "./img/jlbg_3500_dim1.png"
+            ]
+        },
         "jlbg4500": {
             "id": "jlbg4500",
             "name": "JIELONG BG4500",
@@ -1356,100 +1450,6 @@
             ],
             "dimension_images": [
                 "./img/jlbg_6500_dim1.png"
-            ]
-        },
-        "jlsd4500": {
-            "id": "jlsd4500",
-            "name": "JIELONG SD4500",
-            "name_list": [
-                "JIELONG SD4500"
-            ],
-            "description": [
-                "The high capacity Jielong sliding gate motor is optimal for use of up to 4500kg capacity.",
-                "It comes with a Smart Main Board that runs for a long time and ensures optimal functioning.",
-                "Comes with a pure copper coil that makes the motor highly efficient and durable.",
-                "It has a compact structure for saving space and delivering a neat look.",
-                "It has a DC supply for long-term use."
-            ],
-            "technical_features": {
-                "Torque": [
-                    "107 N.m"
-                ],
-                "Rated Power": [
-                    "600 W"
-                ],
-                "Motor Speed": [
-                    "1600 rpm"
-                ],
-                "Gate Speed": [
-                    "15 m/min"
-                ],
-                "Output Voltage": [
-                    "DC 36V"
-                ],
-                "Temperature": [
-                    "-30°C to 65°C"
-                ],
-                "Protection Class": [
-                    "IP 65"
-                ],
-                "Limit Switch": [
-                    "Spring/Magnetic"
-                ]
-            },
-            "images": [
-                "./img/jlsd_4500.png",
-                "./img/jlsd_4500_cu.png"
-            ],
-            "dimension_images": [
-                "./img/jlsd_4500_dim1.png"
-            ]
-        },
-        "jlbg3500": {
-            "id": "jlbg3500",
-            "name": "JIELONG BG3500",
-            "name_list": [
-                "JIELONG BG3500"
-            ],
-            "description": [
-                "The high capacity Jielong sliding gate motor is optimal for use of up to 3500kg capacity.",
-                "It comes with a Smart Main Board that runs for a long time and ensures optimal functioning.",
-                "Comes with a pure copper coil that makes the motor highly efficient and durable.",
-                "It has a compact structure for saving space and delivering a neat look.",
-                "It has a DC supply for long-term use."
-            ],
-            "technical_features": {
-                "Torque": [
-                    "80 N.m"
-                ],
-                "Rated Power": [
-                    "430 W"
-                ],
-                "Motor Speed": [
-                    "1700 rpm"
-                ],
-                "Gate Speed": [
-                    "15 m/min"
-                ],
-                "Output Voltage": [
-                    "DC 36V"
-                ],
-                "Temperature": [
-                    "-30°C to 65°C"
-                ],
-                "Protection Class": [
-                    "IP 65"
-                ],
-                "Limit Switch": [
-                    "Spring"
-                ]
-            },
-            "images": [
-                "./img/jlbg_3500.png",
-                "./img/jlbg_3500_cu.png"
-            ],
-            "dimension_images": [
-                "./img/jlbg_3500_dim1.png"
             ]
         }
     },
